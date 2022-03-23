@@ -39,7 +39,7 @@ public class Main {
                 "        System.out.println(\"Giá trị của f là: \" + f);");
 
 
-        System.out.println("\n3. Run code mẫu: ");
+        System.out.println("\n2. Run code mẫu: ");
         Scanner sc = new Scanner(System.in);
 
         System.out.println("- Nhập giá trị của c: ");
