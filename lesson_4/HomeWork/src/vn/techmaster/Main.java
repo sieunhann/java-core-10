@@ -11,21 +11,15 @@ public class Main {
         System.out.println("Nhập họ và tên của bạn: ");
         String name = sc.nextLine();
 
-        int a = name.length();
-        char[] Name = new char[a];
-        Name[0] = Character.toUpperCase(name.charAt(0));
-        for (int i = 1; i < Name.length; i++){
-            if (Name[i - 1] == ' ') {
-                Name[i] = Character.toUpperCase(name.charAt(i));
-            } else {
-                Name[i] = Character.toLowerCase(name.charAt(i));
-            }
+        name = name.toLowerCase();
+        name = name.replaceAll("\\s+", " ");
+        String[] Name = name.split(" ");
+        name = "";
+        for(int i = 0; i < Name.length; i++){
+            name += String.valueOf(Name[i].charAt(0)).toUpperCase() + Name[i].substring(1) + " ";
         }
+        System.out.println("Họ và tên sau khi chuẩn hóa: " + name);
 
-        System.out.println("Họ và tên sau khi chuẩn hóa: ");
-        for (char i : Name){
-            System.out.print(i);
-        }
 
         System.out.println("\n \nCâu 2: ");
         System.out.println("Nhập số lượng phần tử của mảng: ");
