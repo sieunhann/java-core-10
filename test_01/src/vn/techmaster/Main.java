@@ -42,7 +42,7 @@ public class Main {
         question_04.showPrimeNumber();
 
 
-        System.out.println("\nQuestion 5: ");
+        System.out.println("\n\nQuestion 5: ");
         System.out.println("Nhập số hàng: ");
         int row = sc.nextInt();
         sc.nextLine();
