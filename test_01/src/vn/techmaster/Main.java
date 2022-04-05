@@ -9,7 +9,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Question 1: ");
         System.out.println("a. Square: \n");
-	    question_01.square();
+        question_01.square();
         System.out.println("b. Triangle: \n");
         question_01.triangle();
 
@@ -24,15 +24,12 @@ public class Main {
         Random rd = new Random();
         int rdNumber = rd.nextInt();
         System.out.println("Số random là: " + rdNumber);
-        if(rdNumber < 0){
-            System.out.println("Đó không phải số nguyên tố");
+
+        boolean flag = question_03.isPrimeNumber(rdNumber);
+        if (flag) {
+            System.out.println("Đó là số nguyên tố");
         } else {
-            boolean flag = question_03.isPrimeNumber(rdNumber);
-            if (flag) {
-                System.out.println("Đó là số nguyên tố");
-            } else {
-                System.out.println("Đó không phải số nguyên tố");
-            }
+            System.out.println("Đó không phải số nguyên tố");
         }
 
         System.out.println("\nQuestion 4: ");
