@@ -37,9 +37,12 @@ public class Main {
                     bookService.findBooksByCategory(arrBooks, findCategory);
                     break;
                 case 5:
-                    bookService.sortBooksByPageNumber(arrBooks);
+                    bookService.findBooksThisYear(arrBooks);
                     break;
                 case 6:
+                    bookService.sortBooksByPageNumber(arrBooks);
+                    break;
+                case 7:
                     bookService.sortBooksByYear(arrBooks);
                     break;
                 case 0:
@@ -58,8 +61,9 @@ public class Main {
         System.out.println("2. Lấy thông tin toàn bộ sách");
         System.out.println("3. Tìm sách theo tên");
         System.out.println("4. Tìm sách theo thể loại");
-        System.out.println("5. Sắp xếp sách theo số trang");
-        System.out.println("6. Sắp xếp sách theo năm xuất bản");
+        System.out.println("5. Tìm sách xuất bản trong năm nay");
+        System.out.println("6. Sắp xếp sách theo số trang");
+        System.out.println("7. Sắp xếp sách theo năm xuất bản");
         System.out.println("0. Exit");
     }
 }

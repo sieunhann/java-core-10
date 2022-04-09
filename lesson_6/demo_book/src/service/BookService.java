@@ -2,6 +2,7 @@ package service;
 
 import model.Book;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class BookService {
@@ -76,5 +77,11 @@ public class BookService {
         }
     }
 
-
+    public void findBooksThisYear(Book[] arrBooks){
+        for(Book i : arrBooks){
+            if(i.pulishingYear == LocalDate.now().getYear()){
+                System.out.println(i);
+            }
+        }
+    }
 }
