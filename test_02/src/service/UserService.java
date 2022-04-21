@@ -131,6 +131,7 @@ public class UserService {
         String lPassword = sc.nextLine();
         while (flag){
             if(user.getPassword().equals(lPassword)){
+                System.out.println("Welcome " + user.getUsername());
                 loginSuccess(user, list);
                 flag = false;
             } else {
@@ -147,6 +148,7 @@ public class UserService {
                         case 2:
                             forgotPass(user);
                             System.out.println("Password has been changed");
+                            System.out.println("Welcome " + user.getUsername());
                             loginSuccess(user, list);
                             flagPass = false;
                             flag = false;
